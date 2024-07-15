@@ -5,6 +5,10 @@ import {
   StyledUserName,
   StyledTag,
   StyledLocation,
+  StyledStatsList,
+  StyledStatsItem,
+  StyledLabel,
+  StyledQuantityLine,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -18,21 +22,20 @@ export const Profile = ({
         <StyledTag>@{tag}</StyledTag>
         <StyledLocation>{location}</StyledLocation>
       </StyledDescription>
-
-      {/* <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{stats.likes}</span>
-        </li>
-      </ul> */}
+      <StyledStatsList>
+        <StyledStatsItem>
+          <StyledLabel>Followers</StyledLabel>
+          <StyledQuantityLine>{stats.followers}</StyledQuantityLine>
+        </StyledStatsItem>
+        <StyledStatsItem>
+          <StyledLabel>Views</StyledLabel>
+          <StyledQuantityLine>{stats.views}</StyledQuantityLine>
+        </StyledStatsItem>
+        <StyledStatsItem>
+          <StyledLabel>Likes</StyledLabel>
+          <StyledQuantityLine>{stats.likes}</StyledQuantityLine>
+        </StyledStatsItem>
+      </StyledStatsList>
     </StyledProfile>
   );
 };
