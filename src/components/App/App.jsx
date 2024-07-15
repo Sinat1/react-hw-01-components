@@ -1,5 +1,4 @@
 import { AppContainer } from './App.styled.js';
-// import Profile from './Profile.styled.js';
 import { Profile } from 'components/Profile/Profile.jsx';
 import user from '../../data/user.json';
 
