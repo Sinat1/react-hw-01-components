@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledFriendList = styled.ul`
   display: block;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 350px;
